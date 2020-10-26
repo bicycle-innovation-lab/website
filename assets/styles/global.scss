@@ -1,58 +1,106 @@
-body {
-    background: indianred;
+@font-face {
+  font-family: 'Boing';
+  font-style: normal;
+  font-weight: bold;
+  font-display: block;
+  src: url('/fonts/Boing_SemiboldWEB.eot');
+  src: url('/fonts/Boing_SemiboldWEB.eot?#iefix') format('embedded-opentype'), 
+       url('/fonts/Boing_SemiboldWEB.woff') format('woff'), 
+       url('/fonts/Boing_SemiboldWEB.svg#proxima_nova_rgregular') format('svg');
 }
 
-html {
-    font-family:
-      'Source Sans Pro',
-      -apple-system,
-      BlinkMacSystemFont,
-      'Segoe UI',
-      Roboto,
-      'Helvetica Neue',
-      Arial,
-      sans-serif;
-    font-size: 16px;
-    word-spacing: 1px;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-  }
+:root {
+  // Colors
+  --red-hue: 15;
+  --red-saturation: 100%;
+  --red-lightness: 85%;
+  --blue-hue: 252;
+  --blue-saturation: 64%;
+  --blue-lightness: 20%;
+
+  --red-color: hsl(
+                      var(--red-hue),
+                      var(--red-saturation),
+                      var(--red-lightness)
+                    );
+  --blue-color: hsl(
+                        var(--blue-hue),
+                        var(--blue-saturation),
+                        var(--blue-lightness)
+                      );
+
+  --black: hsl(0, 0%, 18%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(120, 1%, 68%);
+
+  // Shadows
+  --box-shadow-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);;
+  --box-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --box-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
+  // Font
+  --font-family: 'Boing', sans-serif;
+
+  // Misc
+  --border-radius: 0.8rem;
+  --spacing: 1.5rem;
+
+  // --container-width: 
+
+  // Brakepoints
+  $breakpoint-xs: 0;
+  $breakpoint-sm: 36em; // >=576px / 16px
+  $breakpoint-md: 48em; // >=768px
+  $breakpoint-lg: 62em; // >=992px
+  $breakpoint-xl: 75em; // >=1200px
+  $breakpoint-xxl: 88em; // >=1400px
+}
+
+body {
+  font-size: 100%;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
+
+  margin: 0;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: var(#{--white});
+  border: 1px solid transparent;
+  text-decoration: none;
+
+  &::after {
+    content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' width='12.083' height='12.239'> <g data-name='Group 29' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'> <path data-name='Path 2' d='M6.378 1.414l4.705 4.705-4.705 4.705'/> <path data-name='Line 2' d='M10.502 6.073H1'/> </g></svg>");
+    margin-left: 1rem;
+    position: relative;
+    top: 1px;
   }
-  
-  .button--green {
-    display: inline-block;
-    border-radius: 4px;
-    border: 1px solid #3b8070;
-    color: #3b8070;
-    text-decoration: none;
-    padding: 10px 30px;
+
+  &:hover {
+    border: 1px solid green;
   }
-  
-  .button--green:hover {
-    color: #fff;
-    background-color: #3b8070;
+
+  &--primary {
+    background-color: black;
+
+    &:hover {
+      background-color: green;
+    }
   }
-  
-  .button--grey {
-    display: inline-block;
-    border-radius: 4px;
-    border: 1px solid #35495e;
-    color: #35495e;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-left: 15px;
-  }
-  
-  .button--grey:hover {
-    color: #fff;
-    background-color: #35495e;
-  }
+}
