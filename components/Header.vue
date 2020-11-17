@@ -66,7 +66,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 1rem 0;
+  padding-top: 3rem;
+  // padding-bottom: 3rem;
   h1 {
     margin: 0;
     font-size: 1rem;
