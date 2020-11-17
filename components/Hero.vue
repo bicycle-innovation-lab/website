@@ -19,12 +19,6 @@
             Become a member
           </nuxt-link>
         </div>
-        <picture>
-          <source>
-          <source srcset="@/static/images/hero-image.avif" type="image/avif">
-          <source srcset="@/static/images/hero-image.webp" type="image/webp">
-          <img src="@/static/images/hero-image.png" alt="">
-        </picture>
       </div>
     </div>
   </div>
@@ -37,12 +31,13 @@ export default {}
 <style lang="scss" scoped>
 
 .bg {
-  background: var(#{--red-color});
+  background: var(--red-color) url("../static/images/hero-image-halftone.jpg") no-repeat 60% bottom;
   height: 80vh;
 }
 
 .main {
   display: flex;
+  max-width: 50%;
 
   h2 {
     font-size: 5rem;
