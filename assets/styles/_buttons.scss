@@ -1,0 +1,98 @@
+
+.button-old {
+  font-family: 'Brown-Regular';
+  font-size: 1.2rem;
+  font-weight: 200;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: var(#{--white});
+  border: 1px solid transparent;
+  text-decoration: none;
+  
+  &::after {
+    content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' width='12.083' height='12.239'> <g data-name='Group 29' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'> <path data-name='Path 2' d='M6.378 1.414l4.705 4.705-4.705 4.705'/> <path data-name='Line 2' d='M10.502 6.073H1'/> </g></svg>");
+    margin-left: 1rem;
+    position: relative;
+    top: 1px;
+  }
+  
+  &:hover {
+    border: 1px solid green;
+  }
+  
+  &--primary {
+    background-color: black;
+    
+    &:hover {
+      background-color: green;
+    }
+  }
+}
+
+.button {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family: 'Boing-Semibold';
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: var(#{--black});
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s;
+  // transition: background .2s ease-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background-color: #b28c7f;
+    height: 56px;
+    width: 56px;
+    // transition: all .2 ease-out;
+    // transform: scaleX(0);
+    transform-origin: left;
+    // animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+    transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s;
+   
+  }
+  
+  &::after {
+    color: black;
+    content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' width='12.083' height='12.239'> <g data-name='Group 29' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'> <path data-name='Path 2' d='M6.378 1.414l4.705 4.705-4.705 4.705'/> <path data-name='Line 2' d='M10.502 6.073H1'/> </g></svg>");
+    margin-left: .5rem;
+    transition: all .2s ease-out;
+  }
+  
+  &:hover {
+    color: var(#{--white});
+
+    &::before {
+      width: 100%;
+      background-color: hsla(0, 0%, 0%, .9);
+    }
+    
+    &::after {
+      display: inline-block;
+      transform: translateX(3px);
+    }
+  }
+  
+  &--primary {
+    // background-color: hsla(0, 0%, 0%, .9);
+    
+    &:hover {
+      // background-color: hsla(0, 0%, 0%, 1);
+    }
+  }
+}
