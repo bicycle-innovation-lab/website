@@ -62,6 +62,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1,
+.social {
+  opacity: 0;
+  animation: fade-in-right ease .4s forwards;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -74,8 +79,11 @@ header {
     text-transform: uppercase;
   }
 
-  .social svg {
-    width: 2rem;
+  .social {
+    animation-delay: .3s;
+    svg {
+      width: 2rem;
+    }
   }
 }
 </style>
