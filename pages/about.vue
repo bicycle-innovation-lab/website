@@ -1,28 +1,42 @@
 <template>
   <div>
     <Header class="container" />
-    <div class="wrapper">
-      <h1>Cykelbiblioteket</h1>
-      <p class="intro">
-        Gennem cykelbiblioteket kan man erfare cyklernes fulde potentiale og de forandringer, de kan medføre, i ens transportvaner og liv!
-      </p>
-      <p>Cykelbiblioteket repræsenterer et fuldgyldigt alternativ til biler. Det indeholder cykler, der nemt kan transportere store og tunge ting (ladcykler) og uden problemer kører lange distancer i høj hastighed (e-cykler og racercykler) eller nemt kan kombineres med offentlig transport (foldecykler).</p>
-      <h2>Hvad er cykelbibliotek</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nobis dolorum dolore ratione soluta aperiam eum reprehenderit iusto sapiente voluptatum!</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, reprehenderit ipsam, nulla alias delectus explicabo cumque quisquam, quibusdam laborum molestias facere! At ipsa unde tempore facilis perspiciatis culpa omnis aperiam.</p>
-      <picture class="full-bleed">
-        <img src="https://source.unsplash.com/1920x1200" alt="">
-      </picture>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti praesentium fugiat animi expedita pariatur.</p>
-      <h3>Køb af cykel gennem cykelbiblioteket</h3>
-      <p>Nu sælger vi også vores ‘cykelbiblioteks’-cykler – til virksomheder og offentlige institutioner. Fordi vi får cykler direkte fra en bred vifte af cykelleverandører, har vi også god mulighed for at hjælpe med at igangsætte og vedligeholde nye cykelbiblioteker.    </p>
-      <ul>
-        <li>test af en tekst i en liste</li>
-        <li>test af en tekst i en liste</li>
-        <li>test af en tekst i en liste</li>
-      </ul>
-      <p>Vores erfaring og undersøgelser viser, at cykelbiblioteket er et enestående sted at få hjælp til at opleve specialcyklers potentiale og finde ud af, om man vil investere i en. Når det kommer til dyrere cykler, vil de fleste gerne teste og sammenligne dem grundigt. Ved at prøve en specialcykel over en længere periode kan man opleve dens potentiale og opdage, at man ikke kan leve uden den</p>
-    </div>
+    <article class="grid">
+      <header class="small-bleed">
+        <h1>Cykel ting på Cuba som overskrift</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ullam.</p>
+      </header>
+      <aside class="left-bleed">
+        <h2>Kontakt</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, optio.</p>
+      </aside>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vel ducimus molestiae officia natus! Ea soluta porro nostrum, hic necessitatibus eveniet veritatis fugiat vitae dicta modi molestias rem quia deleniti eos nihil ipsam atque neque ut odit quae iste vel rerum. Officia quae suscipit ipsum omnis, iusto, laboriosam sapiente voluptate recusandae in corporis reiciendis quod quia a dignissimos corrupti nesciunt maxime nostrum. Non perferendis temporibus sapiente. Adipisci amet totam libero incidunt cum laborum consequatur a ipsum suscipit nisi veritatis recusandae omnis earum asperiores, necessitatibus esse non dignissimos voluptas voluptatibus eaque reiciendis maxime sapiente, rem saepe. Corporis consequuntur non quisquam libero?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque harum recusandae quas nobis dolorem facilis fugiat eos maiores odit sequi!</p>
+      <figure class="full-bleed inner-grid">
+        <img class="full-bleed inner-grid" src="https://picsum.photos/1200" alt="">
+        <figcaption class="right text-small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
+        </figcaption>
+      </figure>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellendus impedit nisi accusamus ducimus fugit culpa, commodi quod qui. Recusandae, est culpa vel perspiciatis quibusdam voluptatibus nostrum eaque iste optio illum, sequi aut repellendus labore dicta consequuntur? Asperiores, magni provident.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda exercitationem magni, laborum quas inventore maiores aspernatur iusto autem sunt at minus obcaecati quia laudantium adipisci corrupti. Consequuntur commodi esse pariatur unde obcaecati. Quaerat, voluptatibus.</p>
+      <figure class="full-bleed inner-grid">
+        <img class="medium-bleed" src="https://picsum.photos/1000" alt="">
+        <figcaption class="right text-small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
+        </figcaption>
+      </figure>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda exercitationem magni, laborum quas inventore maiores aspernatur iusto autem sunt at minus obcaecati quia laudantium adipisci corrupti. Consequuntur commodi esse pariatur unde obcaecati. Quaerat, voluptatibus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda exercitationem magni, laborum quas inventore maiores aspernatur iusto autem sunt at minus obcaecati quia laudantium adipisci corrupti. Consequuntur commodi esse pariatur unde obcaecati. Quaerat, voluptatibus.</p>
+      <figure class="full-bleed inner-grid">
+        <img class="small-bleed" src="https://picsum.photos/1100" alt="">
+        <figcaption class="right align-end text-small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
+        </figcaption>
+      </figure>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vel ducimus molestiae officia natus! Ea soluta porro nostrum, hic necessitatibus eveniet veritatis fugiat vitae dicta modi molestias rem quia deleniti eos nihil ipsam atque neque ut odit quae iste vel rerum. Officia quae suscipit ipsum omnis, iusto, laboriosam sapiente voluptate recusandae in corporis reiciendis quod quia a dignissimos corrupti nesciunt maxime nostrum. Non perferendis temporibus sapiente. Adipisci amet totam libero incidunt cum laborum consequatur a ipsum suscipit nisi veritatis recusandae omnis earum asperiores, necessitatibus esse non dignissimos voluptas voluptatibus eaque reiciendis maxime sapiente, rem saepe. Corporis consequuntur non quisquam libero?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vel ducimus molestiae officia natus! Ea soluta porro nostrum, hic necessitatibus eveniet veritatis fugiat vitae dicta modi molestias rem quia deleniti eos nihil ipsam atque neque ut odit quae iste vel rerum. Officia quae suscipit ipsum omnis, iusto, laboriosam sapiente voluptate recusandae in corporis reiciendis quod quia a dignissimos corrupti nesciunt maxime nostrum. Non perferendis temporibus sapiente. Adipisci amet totam libero incidunt cum laborum consequatur a ipsum suscipit nisi veritatis recusandae omnis earum asperiores, necessitatibus esse non dignissimos voluptas voluptatibus eaque reiciendis maxime sapiente, rem saepe. Corporis consequuntur non quisquam libero?</p>
+    </article>
   </div>
 </template>
 
