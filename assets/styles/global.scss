@@ -1,33 +1,10 @@
-@font-face {
-  font-family: 'Boing-Bold';
-  font-weight: bold;
-  src: url('/fonts/boing/boing_bold.woff2') format("woff2"), 
-      url('/fonts/boing/boing_bold.woff') format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Boing-Semibold';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url('/fonts/Boing_SemiboldWEB.eot');
-  src: url('/fonts/Boing_SemiboldWEB.eot?#iefix') format('embedded-opentype'), 
-       url('/fonts/Boing_SemiboldWEB.woff2') format('woff2'), 
-       url('/fonts/Boing_SemiboldWEB.woff') format('woff'), 
-       url('/fonts/Boing_SemiboldWEB.svg#proxima_nova_rgregular') format('svg');
-}
-
-@font-face {
-  font-family: 'Brown-Regular';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url('/fonts/brown/regular/lineto-brown-pro-regular.eot');
-  src: url('/fonts/brown/regular/lineto-brown-pro-regular.eot?#iefix') format('embedded-opentype'), 
-       url('/fonts/brown/regular/lineto-brown-pro-regular.woff') format('woff'), 
-       url('/fonts/brown/regular/lineto-brown-pro-regular.svg') format('svg');
-}
+@import 'abstracts/include-media';
+@import 'base/reset';
+@import 'base/animations';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'pages/sub-page';
+@import 'layout/grid';
 
 :root {
   // Colors
@@ -182,8 +159,12 @@ p, li {
   padding: 0 2rem;
 }
 
-@import 'base/animations';
-@import 'base/typography';
-@import 'components/buttons';
-@import 'pages/sub-page';
-@import 'layout/grid'
+
+
+body {
+  @include media(">phone", "<=tablet") {
+
+    background-color: black;
+
+}
+}
