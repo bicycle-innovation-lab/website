@@ -1,5 +1,9 @@
 # website
 
+## Initial Setup
+
+Download and install current version of (node.js)[https://nodejs.org/en/]
+
 ## Build Setup
 
 ```bash
