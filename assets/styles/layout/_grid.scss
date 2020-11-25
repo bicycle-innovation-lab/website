@@ -1,0 +1,81 @@
+.grid {
+    --spacing: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 
+        minmax(var(--spacing), 1fr) 
+        minmax(0, 25ch) 
+        minmax(0, 12ch) 
+        min(65ch, calc(100% - (2 * var(--spacing)))) 
+        minmax(0, 12ch)
+        minmax(0, 25ch) 
+        minmax(var(--spacing), 1fr);
+    grid-template-rows: auto;
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-columns: 
+        1fr
+        minmax(0, 25ch) 
+        minmax(0, 12ch) 
+        min(65ch, 100%) 
+        minmax(0, 12ch)
+        minmax(0, 25ch) 
+        1fr;
+    grid-template-rows: auto;
+}
+
+/* All elements in the grid fills up center column by default */
+.grid * {
+    grid-column: 4 / 5;
+    align-self: start;
+}
+
+.grid > figure {
+    margin: 3rem auto;
+}
+
+/* HACK to move following paragraphs next to caption */
+.grid > figure > figcaption {
+    margin-bottom: -10rem;
+}
+
+.grid > figure > img {
+    object-fit: cover;
+    max-height: 50vh;
+}
+
+.grid > .left-bleed {
+    grid-column: 2 / 4;
+    align-self: start;
+    grid-row: 2 / 5;
+    margin-right: 2rem;
+}
+
+.grid > .full-bleed,
+.inner-grid > .full-bleed {
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+figure.inner-grid > figcaption.right {
+    grid-column: 6 / 7;
+    margin-top: 1rem;
+}
+
+.grid > figure > figcaption.align-end {
+    align-self: end;
+    margin-bottom: 0;
+    margin-left: 1em;
+}
+
+.small-bleed {
+    width: 100%;
+    grid-column: 3 / span 3;
+}
+
+.medium-bleed {
+    width: 100%;
+    grid-column: 2 / -2;
+}
