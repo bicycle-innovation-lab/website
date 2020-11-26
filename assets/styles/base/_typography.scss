@@ -29,8 +29,82 @@
   url('/fonts/brown/regular/lineto-brown-pro-regular.svg') format('svg');
 }
 
+body {
+  font-size: 100%;
+  font-family: var(--font-family);
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
+}
+
+// fonts
+h1, h2, h3, h4, p, li{
+  font-family: 'Boing-Bold', sans-serif;
+  color: rgb(36, 36, 36);
+}
+
+h1 {
+  @include fluid-type(20rem, 64rem, 1.6rem, 5rem);
+  margin-bottom: .5em;
+}
+
+h2 {
+  @include fluid-type(20rem, 64rem, 1rem, 2rem);
+  margin-top: 2em;
+  margin-bottom: 1.2em;
+  // text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+  // text-transform: uppercase;
+}
+
+p, li {
+  font-family: 'Brown-Regular';
+  @include fluid-type(20rem, 64rem, .9rem, 1.2rem);
+  line-height: 1.5em;
+  margin-bottom: .8em;
+
+  &.lead {
+    @include fluid-type(20rem, 64rem, 1.2rem, 1.5rem);
+    line-height: 1.2em;
+  }
+
+  font-weight: 200;
+
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -webkit-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-zone: 8%;
+  
+  -moz-hyphens: auto;
+  -moz-hyphenate-limit-chars: 6 3 3;
+  -moz-hyphenate-limit-lines: 2;
+  -moz-hyphenate-limit-last: always;
+  -moz-hyphenate-limit-zone: 8%;
+  
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: 6 3 3;
+  -ms-hyphenate-limit-lines: 2;
+  -ms-hyphenate-limit-last: always;
+  -ms-hyphenate-limit-zone: 8%;
+  
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+
 figcaption {
   font-family: 'Brown Regular';
-  font-size: .9rem;
-  color: var(--black)
+  color: var(--black);
+  @include fluid-type(20rem, 64rem, .8rem, .9rem);
+  line-height: 1.15;
 }
