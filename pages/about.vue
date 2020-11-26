@@ -4,7 +4,7 @@
     <article class="grid sub-page">
       <header class="small-bleed">
         <h1>Cykel ting på Cuba som overskrift</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ullam.</p>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ullam.</p>
       </header>
       <aside class="info-box left-bleed">
         <h2>Kontakt</h2>

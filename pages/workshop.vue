@@ -1,8 +1,14 @@
 <template>
   <main>
     <Header class="container" />
-    <article class="wrapper">
-      <aside class="sidebar">
+    <article class="grid sub-page">
+      <header class="small-bleed">
+        <h1>Værkstedet</h1>
+        <p class="lead">
+          Værksted med et stort udvalg af professionelt værktøj og de mest almindelige reservedele.
+        </p>
+      </header>
+      <aside class="info-box left-bleed">
         <h2>Find værkstedet her</h2>
         <address>
           Bicycle Innovation Lab </br>
@@ -10,12 +16,6 @@
           2300 København S
         </address>
       </aside>
-      <header>
-        <h1>Værkstedet</h1>
-        <p class="intro">
-          Værksted med et stort udvalg af professionelt værktøj og de mest almindelige reservedele.
-        </p>
-      </header>
       <p>Vores værksted råder over et udvalg af professionelle værktøjer og de mest almindelige reservedele. Medlemmer kan også bestille knap så gængse reservedele til deres cykler fra større danske reservedelsgrossister, som vi har konto hos.</p>
       <p>Vi er også begyndt at samarbejde med andre lokale, ‘sociale’ cykelværksteder, primært gennem fælles bestilling af værktøj og reservedele samt afholdelse af workshops og indsamling af indleverede cykler fra genbrugscentre.</p>
       <h2>Åbne workshops</h2>
