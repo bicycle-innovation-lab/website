@@ -52,6 +52,9 @@
   //   margin-left: .5rem;
   //   transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s;
   // }
+  &:visited {
+    color: var(--black);
+  }
   
   &:hover {
     color: var(--white);
