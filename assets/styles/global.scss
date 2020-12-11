@@ -21,6 +21,9 @@
                       var(--red-saturation),
                       var(--red-lightness)
                     );
+
+  --red-color-900: hsl(var(--red-hue), 90%, 75%);
+
   --blue-color: hsl(
                         var(--blue-hue),
                         var(--blue-saturation),
@@ -68,14 +71,18 @@ body {
   padding: 0 2rem;
 }
 
-
-
-body {
-  @include media("<=desktop") {
-    background-color: skyblue;
-  }
-  @include media(">phone", "<=tablet") {
-    background-color: goldenrod;
-
-  }
+.baggroundColor {
+  background-color: var(--red-color);
 }
+
+
+// TESTING MEDIA QUERIES
+// body {
+//   @include media("<=desktop") {
+//     background-color: skyblue;
+//   }
+//   @include media(">phone", "<=tablet") {
+//     background-color: goldenrod;
+
+//   }
+// }
