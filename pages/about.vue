@@ -1,17 +1,18 @@
 <template>
   <div>
-    <Header class="container" />
     <article class="grid sub-page">
       <header class="small-bleed">
         <h1>Cykel ting på Cuba som overskrift</h1>
-        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ullam.</p>
+        <p class="lead">
+          Lorem ipsum, dolor sit <a href="#">amet</a> consectetur adipisicing elit. A, quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ullam.
+        </p>
       </header>
       <aside class="info-box left-bleed">
         <h2>Kontakt</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, optio.</p>
+        <p>Lorem, ipsum dolor sit amet <a href="#">consectetur</a> adipisicing elit. Adipisci, optio.</p>
       </aside>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore necessitatibus blanditiis quam, veritatis laudantium maiores consequuntur quas provident quod ipsa voluptas asperiores veniam, incidunt debitis accusamus aperiam. Asperiores doloremque ut voluptatibus? Accusamus deserunt rerum pariatur velit necessitatibus dolorem laudantium impedit?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odit, perferendis fugiat beatae magni accusamus nulla, alias facilis fugit quam, nam sint ipsa autem iste sit necessitatibus porro. Magnam, aliquid!</p>
+      <p>Lorem ipsum dolor sit amet consectetur <a href="https://www.google.co.uk">adipisicing</a> elit. Laudantium odit, perferendis fugiat beatae magni accusamus nulla, alias facilis fugit quam, nam sint ipsa autem iste sit necessitatibus porro. Magnam, aliquid!</p>
       <figure class="full-bleed inner-grid">
         <img class="small-bleed inner-grid" src="https://picsum.photos/1200" alt="">
         <figcaption class="right align-end text-small">
