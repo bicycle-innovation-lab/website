@@ -1,7 +1,6 @@
 <template>
-  <div class="bg">
+  <div class="baggroundColor">
     <div class="container">
-      <Header />
       <div class="main">
         <div class="lead">
           <h2>
@@ -17,6 +16,15 @@
             class="button button--primary"
           >
             Become a member
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5" />
+              <polyline points="8 1 12 5 8 9" />
+            </svg>
+            <!-- <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='12.083'
+              height='12.239'>
+              <g data-name='Group 29' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'> <path data-name='Path 2' d='M6.378 1.414l4.705 4.705-4.705 4.705'/> <path data-name='Line 2' d='M10.502 6.073H1'/> </g></svg> -->
           </nuxt-link>
         </div>
       </div>
@@ -30,7 +38,7 @@ export default {}
 
 <style lang="scss" scoped>
 
-.bg {
+.baggroundColor {
   background: var(--red-color) url("../static/images/hero-image-halftone.jpg") no-repeat 60% bottom;
   height: 80vh;
 
