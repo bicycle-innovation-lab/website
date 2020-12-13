@@ -20,5 +20,5 @@ COPY --from=builder ./app/.nuxt ./.nuxt/
 COPY --from=builder ./app/static ./static/
 ENV NODE_ENV=production
 ENV HOST 0.0.0.0
-EXPOSE 3000
+EXPOSE 3001
 CMD ["yarn", "start:modern"]
