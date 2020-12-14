@@ -1,5 +1,8 @@
 <template>
-  <div class="baggroundColor">
+  <div class="hero">
+
+    <div class="hero__bg"></div>
+
     <div class="container">
       <div class="main">
         <div class="lead">
@@ -29,6 +32,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -37,10 +41,18 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.hero__bg{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--red-color);
+  position: absolute;
+  top: 0;
+  animation: grow-top cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s forwards;
+}
 
-.baggroundColor {
-  background: var(--red-color) url("../static/images/hero-image-halftone.jpg") no-repeat 60% bottom;
-  height: 80vh;
+.hero {
+  // background: url("../static/images/hero-image-halftone.jpg") no-repeat 60% bottom;
+  height: 100vh;
 
   .container {
     display: flex;

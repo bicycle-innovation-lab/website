@@ -68,6 +68,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+  position: relative;
+  z-index: 1;
+}
+
 h1,
 .social {
   opacity: 0;

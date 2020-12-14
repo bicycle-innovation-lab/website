@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div :class="{baggroundColor: this.$route.name === 'index'}" >
-      <Header />
-    </div>
+    <Header />
     <Nuxt />
     <Footer />
   </div>
