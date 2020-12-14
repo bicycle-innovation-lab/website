@@ -1,6 +1,12 @@
 <template>
-  <header>
-    <h1>Bicycle Innovation Lab</h1>
+  <header class="container">
+    <nuxt-link to="/" class="logo" :class="{notIndex: this.$route.name !== 'index'}">
+      <svg width="13px" height="10px" viewBox="0 0 13 10">
+        <path d="M1,5 L11,5" />
+        <polyline points="8 1 12 5 8 9" />
+      </svg>
+      <h1>Bicycle Innovation Lab</h1>
+    </nuxt-link>
     <div class="social">
       <a
         href="#"
@@ -77,6 +83,8 @@ header {
     margin: 0;
     font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: -0.016em;
+    word-spacing: 0.08em;
   }
 
   .social {
@@ -86,4 +94,47 @@ header {
     }
   }
 }
+
+.logo {
+  display: inline-block;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+
+  svg {
+    transform: rotate(.5turn) translateX(-10px);
+    opacity: 0;
+    position: relative;
+    bottom: 2px;
+    margin-right: .7rem;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--black);
+    stroke-width: 2;
+    transition: all 0.15s ease-out;
+  }
+
+  h1 {
+    margin-left: -27px;
+    display: inline-block;
+    transition: all 0.15s ease-out;
+    
+  }
+}
+
+.logo.notIndex {
+  svg {
+    transform: rotate(.5turn) translateX(-2px);
+    opacity: 1;
+  }
+  h1 {
+    margin-left: -8px;
+  }
+
+  &:hover {
+      svg {
+      transform: rotate(.5turn) translateX(2px);
+    }
+  }
+}
+
 </style>
