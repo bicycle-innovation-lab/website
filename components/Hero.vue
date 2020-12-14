@@ -41,13 +41,26 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.page-enter-active, .page-leave-active {
+  .hero__bg {
+    animation: grow-top cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s forwards;
+ }
+}
+.page-enter, .page-leave-active {
+
+  .hero__bg {
+    animation: grow-bottom cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s both;
+ }
+}
+
+
 .hero__bg{
   width: 100%;
   height: 100vh;
   background-color: var(--red-color);
   position: absolute;
   top: 0;
-  animation: grow-top cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s forwards;
+  // animation: grow-top cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s forwards;
 }
 
 .hero {
