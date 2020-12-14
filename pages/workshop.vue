@@ -1,6 +1,5 @@
 <template>
   <main>
-    <Header class="container" />
     <article class="grid sub-page">
       <header class="small-bleed">
         <h1>Værkstedet</h1>
@@ -12,7 +11,7 @@
         <h2>Find værkstedet her</h2>
         <address>
           Bicycle Innovation Lab </br>
-          Prags Boulevard ved Prismen</br>
+          Prags Boulevard ved Prismen </br>
           2300 København S
         </address>
       </aside>
