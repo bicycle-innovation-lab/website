@@ -13,15 +13,15 @@
       </aside>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore necessitatibus blanditiis quam, veritatis laudantium maiores consequuntur quas provident quod ipsa voluptas asperiores veniam, incidunt debitis accusamus aperiam. Asperiores doloremque ut voluptatibus? Accusamus deserunt rerum pariatur velit necessitatibus dolorem laudantium impedit?</p>
       <p>Lorem ipsum dolor sit amet consectetur <a href="https://www.google.co.uk">adipisicing</a> elit. Laudantium odit, perferendis fugiat beatae magni accusamus nulla, alias facilis fugit quam, nam sint ipsa autem iste sit necessitatibus porro. Magnam, aliquid!</p>
-      <figure class="full-bleed inner-grid">
-        <img class="small-bleed inner-grid" src="https://picsum.photos/1200" alt="">
+      <figure class="full-bleed grid">
+        <img class="small-bleed grid" src="https://picsum.photos/1200" alt="">
         <figcaption class="right align-end text-small">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
         </figcaption>
       </figure>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa asperiores voluptatem dolor sit eos fugiat debitis, quibusdam dolore corrupti ducimus iure quis corporis nemo placeat quia veritatis consequatur eius nesciunt. Error officia omnis perspiciatis neque. Corrupti, quaerat doloremque. Ex aperiam, recusandae minima quis error suscipit debitis autem maiores voluptates natus veritatis, sequi voluptas commodi libero obcaecati consequuntur dolor fuga aliquid?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda exercitationem magni, laborum quas inventore maiores aspernatur iusto autem sunt at minus obcaecati quia laudantium adipisci corrupti. Consequuntur commodi esse pariatur unde obcaecati. Quaerat, voluptatibus.</p>
-      <figure class="full-bleed inner-grid">
+      <figure class="full-bleed grid">
         <img class="full-bleed" src="https://picsum.photos/1000" alt="">
         <figcaption class="right text-small">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
@@ -29,7 +29,7 @@
       </figure>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda exercitationem magni, laborum quas inventore maiores aspernatur iusto autem sunt at minus obcaecati quia laudantium adipisci corrupti. Consequuntur commodi esse pariatur unde obcaecati. Quaerat, voluptatibus.</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda exercitationem magni, laborum quas inventore maiores aspernatur iusto autem sunt at minus obcaecati quia laudantium adipisci corrupti. Consequuntur commodi esse pariatur unde obcaecati. Quaerat, voluptatibus.</p>
-      <figure class="full-bleed inner-grid">
+      <figure class="full-bleed grid">
         <img class="medium-bleed" src="https://picsum.photos/1100" alt="">
         <figcaption class="right text-small">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
