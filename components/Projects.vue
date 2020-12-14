@@ -17,13 +17,15 @@
       </p>
     </article>
     <article>
-      <img src="https://picsum.photos/600/300.webp" alt="">
-      <h3>Værkstedet</h3>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
-        expedita rem quis doloribus quo quasi nam earum aliquam aliquid
-        voluptatum!
-      </p>
+      <nuxt-link to="/workshop">
+        <img src="https://picsum.photos/600/300.webp" alt="">
+        <h3>Værkstedet</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+          expedita rem quis doloribus quo quasi nam earum aliquam aliquid
+          voluptatum!
+        </p>
+      </nuxt-link>
     </article>
     <article>
       <img src="https://picsum.photos/450/300.webp" alt="">
@@ -67,11 +69,12 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-header {
+header,
+article {
   text-align: center;
 
   p {
-    max-width: 70ch;
+    max-width: 65ch;
     margin: .5rem auto;
   }
 }
@@ -87,10 +90,14 @@ section {
     flex: 1 0 100%;
   }
   article {
-    flex: 0 1 48%;
+    flex: 1 1 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    img{
+      max-width: 100%;
+      object-fit: cover;
+    }
     h3,
     p {
       text-align: center;
