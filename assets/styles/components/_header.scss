@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  z-index: 1;
+  padding-top: 3rem;
+  
+  nav {
+    grid-column: 2 / -2;
+    display: flex;
+    justify-content: space-between;
+    margin-right: var(--spacing);
+    margin-left: var(--spacing);
+  }
+    
+  &__logo,
+  &__social {
+    opacity: 0;
+    align-self: center;
+    animation: fade-in-right ease .4s forwards;
+  }
+
+  &__logo {
+    white-space: nowrap;
+    padding: 1.5rem 0;
+    text-decoration: none;
+
+    svg {
+      transform: rotate(.5turn) translateX(-10px);
+      opacity: 0;
+      position: relative;
+      bottom: 1px;
+      margin-right: .7rem;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: var(--black);
+      stroke-width: 2;
+      transition: all 0.15s ease-out;
+    }
+  
+    h1 {
+      @include fluid-type(20rem, 64rem, .9rem, 1rem);
+      margin: 0 0 0 -27px;
+      text-transform: uppercase;
+      letter-spacing: -0.016em;
+      word-spacing: 0.08em;
+
+      display: inline-block;
+      transition: all 0.15s ease-out;
+    }
+  }
+
+  &__social {
+    align-self: center !important;
+    animation-delay: .3s;
+
+    svg {
+      width: 2rem;
+    }
+  }
+
+  &__logo.notIndex {
+    svg {
+      transform: rotate(.5turn) translateX(-2px);
+      opacity: 1;
+    }
+    h1 {
+      margin-left: -8px;
+    }
+  
+    &:hover {
+        svg {
+        transform: rotate(.5turn) translateX(2px);
+      }
+    }
+  }
+}
