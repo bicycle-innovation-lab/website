@@ -1,7 +1,6 @@
 <template>
   <div class="hero">
-
-    <div class="hero__bg"></div>
+    <div class="hero__bg" />
 
     <div class="container">
       <div class="main">
@@ -32,7 +31,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -52,7 +50,6 @@ export default {}
     animation: grow-bottom cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s both;
  }
 }
-
 
 .hero__bg{
   width: 100%;
