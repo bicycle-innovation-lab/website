@@ -13,12 +13,35 @@
       </aside>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore necessitatibus blanditiis quam, veritatis laudantium maiores consequuntur quas provident quod ipsa voluptas asperiores veniam, incidunt debitis accusamus aperiam. Asperiores doloremque ut voluptatibus? Accusamus deserunt rerum pariatur velit necessitatibus dolorem laudantium impedit?</p>
       <p>Lorem ipsum dolor sit amet consectetur <a href="https://www.google.co.uk">adipisicing</a> elit. Laudantium odit, perferendis fugiat beatae magni accusamus nulla, alias facilis fugit quam, nam sint ipsa autem iste sit necessitatibus porro. Magnam, aliquid!</p>
+      <h2>Small-bleed</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore necessitatibus blanditiis quam, veritatis laudantium maiores consequuntur quas provident quod ipsa voluptas asperiores veniam, incidunt debitis accusamus aperiam. Asperiores doloremque ut voluptatibus? Accusamus deserunt rerum pariatur velit necessitatibus dolorem laudantium impedit?</p>
       <figure class="full-bleed grid">
-        <img class="small-bleed grid" src="https://picsum.photos/1200" alt="">
+        <nuxt-image class="small-bleed grid" src="https://images.unsplash.com/photo-1608096299230-81c7b43d5dfc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80" />
         <figcaption class="right align-end text-small">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
         </figcaption>
       </figure>
+
+      <h2>Medium-bleed</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore necessitatibus blanditiis quam, veritatis laudantium maiores consequuntur quas provident quod ipsa voluptas asperiores veniam, incidunt debitis accusamus aperiam. Asperiores doloremque ut voluptatibus? Accusamus deserunt rerum pariatur velit necessitatibus dolorem laudantium impedit?</p>
+      <figure class="full-bleed grid">
+        <nuxt-image class="small-bleed grid" src="https://picsum.photos/1200" />
+        <figcaption class="right align-end text-small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
+        </figcaption>
+      </figure>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore necessitatibus blanditiis quam, veritatis laudantium maiores consequuntur quas provident quod ipsa voluptas asperiores veniam, incidunt debitis accusamus aperiam. Asperiores doloremque ut voluptatibus? Accusamus deserunt rerum pariatur velit necessitatibus dolorem laudantium impedit?</p>
+
+      <h2>Full-bleed</h2>
+      <figure class="full-bleed grid">
+        <nuxt-image class="small-bleed grid" src="https://picsum.photos/1200" />
+        <figcaption class="right align-end text-small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
+        </figcaption>
+      </figure>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore necessitatibus blanditiis quam, veritatis laudantium maiores consequuntur quas provident quod ipsa voluptas asperiores veniam, incidunt debitis accusamus aperiam. Asperiores doloremque ut voluptatibus? Accusamus deserunt rerum pariatur velit necessitatibus dolorem laudantium impedit?</p>
+
+      <img class="small-bleed grid" src="https://picsum.photos/1200" alt="">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa asperiores voluptatem dolor sit eos fugiat debitis, quibusdam dolore corrupti ducimus iure quis corporis nemo placeat quia veritatis consequatur eius nesciunt. Error officia omnis perspiciatis neque. Corrupti, quaerat doloremque. Ex aperiam, recusandae minima quis error suscipit debitis autem maiores voluptates natus veritatis, sequi voluptas commodi libero obcaecati consequuntur dolor fuga aliquid?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda exercitationem magni, laborum quas inventore maiores aspernatur iusto autem sunt at minus obcaecati quia laudantium adipisci corrupti. Consequuntur commodi esse pariatur unde obcaecati. Quaerat, voluptatibus.</p>
       <figure class="full-bleed grid">
