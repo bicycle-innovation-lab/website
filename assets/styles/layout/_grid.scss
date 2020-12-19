@@ -98,6 +98,10 @@ figure.grid > figcaption.right {
   > * {
     grid-column: 3 / -3;
   }
+
+  > img {
+    grid-column: 2 / -2;
+  }
   
 }
 
@@ -116,6 +120,10 @@ header.small-bleed {
   > * {
     grid-column: 2 / -2;
   }
+}
+
+.full-bleed > img {
+  grid-column: 1 / -1;
 }
 
 .info-box {
