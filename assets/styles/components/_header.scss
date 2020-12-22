@@ -11,7 +11,7 @@
     margin-right: var(--spacing);
     margin-left: var(--spacing);
   }
-    
+
   &__logo,
   &__social {
     opacity: 0;
@@ -23,6 +23,15 @@
     white-space: nowrap;
     padding: 1.5rem 0;
     text-decoration: none;
+    color: var(--text-color);
+
+    &:visited {
+      color: var(--primary-color);
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      color: var(--primary-color);
+    }
 
     svg {
       transform: rotate(.5turn) translateX(-10px);
@@ -33,7 +42,7 @@
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke: var(--black);
+      stroke: currentColor;
       stroke-width: 2;
       transition: all 0.15s ease-out;
     }
@@ -47,15 +56,26 @@
 
       display: inline-block;
       transition: all 0.15s ease-out;
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--primary-color);
+      }
     }
   }
 
   &__social {
     align-self: center !important;
+    margin-top: 3px;
     animation-delay: .3s;
 
+    a {
+      display: inline-block;
+    }
+
     svg {
+      display: block;
       width: 2rem;
+      fill: currentColor;
     }
   }
 

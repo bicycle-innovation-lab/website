@@ -2,16 +2,31 @@
   margin-top: 5rem;
   
   header{
-    font-size: 2rem;
     margin-bottom: 2rem;
   }
 }
 
 .info-box {
-  background-color: var(--red-color);
+  padding: 2rem var(--spacing);
+  background-color: var(--primary-color);
+
+  ::selection {
+    background-color: indianred;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    color: var(--black);
+  }
   
   h2 {
     font-size: 1.5em;
     margin-top: 0;
+    margin-bottom: 1rem;
+    color: inherit;
+  }
+  
+  p {
+    color: inherit;
+    margin-bottom: 0;
   }
 }

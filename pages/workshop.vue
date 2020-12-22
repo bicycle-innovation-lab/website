@@ -29,7 +29,6 @@
       <h2>Udlån af cykel-workshop ekker kursus i reperations</h2>
       <p>Omfatter værktøj, reservedele, udstyr og en erfaren mekaniker, der efter aftale kan arrangere en skræddersyet cykel-workshop.</p>
 
-
     </article>
   </main>
 </template>

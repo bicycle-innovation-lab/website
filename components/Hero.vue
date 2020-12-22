@@ -52,12 +52,16 @@ export default {}
 }
 
 .hero__bg{
-  width: 100%;
-  height: 100vh;
-  background-color: var(--red-color);
-  position: absolute;
-  top: 0;
-  // animation: grow-top cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s forwards;
+display: none;
+
+  @media (prefers-color-scheme: light) {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: var(--primary-color);
+    // animation: grow-top cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s forwards;
+  }
 }
 
 .hero {
@@ -77,6 +81,10 @@ export default {}
   a {
     opacity: 0;
     animation: fade-in-top ease .4s forwards;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--white);
+    }
   }
 }
 

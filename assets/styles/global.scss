@@ -3,10 +3,10 @@
 @import 'base/reset';
 @import 'base/animations';
 @import 'base/typography';
+@import 'layout/grid';
 @import 'components/buttons';
 @import 'components/header';
 @import 'pages/sub-page';
-@import 'layout/grid';
 
 :root {
   // Colors
@@ -31,9 +31,15 @@
                         var(--blue-lightness)
                       );
 
-  --black: hsl(0, 0%, 18%);
-  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 14%);
+  // --white: hsl(0, 0%, 100%);
+  --white: hsl(38.2, 44%, 95.1%);
   --gray: hsl(120, 1%, 68%);
+
+  --primary-color: var(--red-color);
+  --primary-color-900: var(--red-color-900);
+  --bg-color: var(--white);
+  --text-color: var(--black);
 
   // Shadows
   --box-shadow-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
@@ -61,9 +67,34 @@
   $breakpoint-xxl: 88em; // >=1400px
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    // --primary-color: var(--black);
+    --bg-color: var(--black);
+    --text-color: var(--white)
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  
+}
+
+
+html {
+  height: -webkit-fill-available; /* https://twitter.com/bfgeek/status/1262465912025698304 */
+}
+
+html, body {
+  min-height: 100%; /* We keep this right? */
+  min-height: 100vh;
+  min-height: -webkit-fill-available; /* We want the vendor-prefixed value to take affect
+                                         in browsers that support it, fall back to 100vh,
+                                         then 100%. */
+}
+
 body {
   margin: 0;
-  background-color: #f8f4ed;
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -73,7 +104,7 @@ body {
 }
 
 .baggroundColor {
-  background-color: var(--red-color);
+  background-color: var(--primary-color);
 }
 
 

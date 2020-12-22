@@ -93,7 +93,11 @@ figure.grid > figcaption.right {
 
 .small-bleed {
   width: 100%;
-  grid-column: 3 / -3;
+  grid-column: 2 / -2;
+
+  @include media(">=tablet"){
+    grid-column: 3 / -3;
+  }
 
   > * {
     grid-column: 3 / -3;
@@ -102,7 +106,6 @@ figure.grid > figcaption.right {
   > img {
     grid-column: 2 / -2;
   }
-  
 }
 
 header.small-bleed {
@@ -124,8 +127,4 @@ header.small-bleed {
 
 .full-bleed > img {
   grid-column: 1 / -1;
-}
-
-.info-box {
-  padding: var(--spacing);
 }
