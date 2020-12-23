@@ -1,36 +1,28 @@
 <template>
   <div class="hero">
+
     <div class="hero__bg" />
 
-    <div class="container">
-      <div class="main">
-        <div class="lead">
-          <h2>
-            Copenhagens most innovative bike aktivist
-          </h2>
+    <div class="grid">
+      <div class="hero__text">
+        <div>
           <p>
-            Forening med åben deltagelse, hvor alle med interesse i cyklen kan hælpe
-            med at udforske cyklens potentiale. Bliv en del af et netværk med mange
-            cykel aktivister.
+            Innovative <nuxt-link to="#">cykelforening</nuxt-link> hvor alle med interesse i cyklen kan hælpe med at udforske dens potentiale. Bliv medlem i dag og bliv en del af et <nuxt-link to="#">netværk</nuxt-link> med mange entusiaster. Få adgang til <nuxt-link to="#">vores værksted</nuxt-link>, lån cykler fra <nuxt-link to="#">cykelbiblioteket</nuxt-link>, deltag til <nuxt-link to="#">events</nuxt-link> og hjælp os med et af vores mange <nuxt-link to="#">andre projekter</nuxt-link>.
           </p>
           <nuxt-link
             to="/about"
             class="button button--primary"
           >
-            Become a member
+            Tilmeld mig
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5" />
               <polyline points="8 1 12 5 8 9" />
             </svg>
-            <!-- <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='12.083'
-              height='12.239'>
-              <g data-name='Group 29' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'> <path data-name='Path 2' d='M6.378 1.414l4.705 4.705-4.705 4.705'/> <path data-name='Line 2' d='M10.502 6.073H1'/> </g></svg> -->
           </nuxt-link>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -50,65 +42,4 @@ export default {}
     animation: grow-bottom cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s both;
  }
 }
-
-.hero__bg{
-display: none;
-
-  @media (prefers-color-scheme: light) {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    background-color: var(--primary-color);
-    // animation: grow-top cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s forwards;
-  }
-}
-
-.hero {
-  // background: url("../static/images/hero-image-halftone.jpg") no-repeat 60% bottom;
-  height: 100vh;
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-}
-
-.main {
-  h2,
-  p,
-  a {
-    opacity: 0;
-    animation: fade-in-top ease .4s forwards;
-
-    @media (prefers-color-scheme: dark) {
-      color: var(--white);
-    }
-  }
-}
-
-.main {
-  display: flex;
-  max-width: 500px;
-  flex: 1;
-  align-items: center;
-
-  h2 {
-    font-size: 2.8rem;
-    line-height: 2.7rem;
-    animation-delay: .2s;
-  }
-
-  p {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    animation-delay: .3s;
-  }
-
-  a{
-    animation-delay: .4s;
-  }
-}
-
 </style>
