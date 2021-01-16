@@ -12,6 +12,7 @@
         <address>
           Bicycle Innovation Lab </br>
           Prags Boulevard ved Prismen </br>
+          Holmbladsgade 71 </br>
           2300 København S
         </address>
       </aside>
@@ -28,7 +29,6 @@
       <p>Hvis du er cykelmekaniker og gerne vil stå for en workshop eller assistere i vores værksted, har du mulighed for at blive medlem i Bicycle Innovation Lab som frivillig. Læs mere her.</p>
       <h2>Udlån af cykel-workshop ekker kursus i reperations</h2>
       <p>Omfatter værktøj, reservedele, udstyr og en erfaren mekaniker, der efter aftale kan arrangere en skræddersyet cykel-workshop.</p>
-
     </article>
   </main>
 </template>
