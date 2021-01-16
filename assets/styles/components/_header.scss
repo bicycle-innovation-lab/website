@@ -48,7 +48,7 @@
     }
   
     h1 {
-      @include fluid-type(20rem, 64rem, .9rem, 1rem);
+      @include fluid-type(20rem, 64rem, 1rem, 1.3rem);
       margin: 0 0 0 -27px;
       text-transform: uppercase;
       letter-spacing: -0.016em;
@@ -70,12 +70,6 @@
 
     a {
       display: inline-block;
-    }
-
-    svg {
-      display: block;
-      width: 2rem;
-      fill: currentColor;
     }
   }
 
