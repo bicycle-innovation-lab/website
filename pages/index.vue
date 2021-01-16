@@ -12,7 +12,7 @@ export default {}
 <style lang="scss">
 /* Transitions using the page hook */
 .page-enter-active, .page-leave-active {
-  transition: all .5s;
+  transition: all .2s;
 
   .hero__bg {
     opacity: 1;
