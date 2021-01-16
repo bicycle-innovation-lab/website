@@ -6,19 +6,14 @@
       <div class="hero__text">
         <div>
           <p>
-            Innovative <nuxt-link to="#">
-              cykelforening
-            </nuxt-link> hvor alle med interesse i cyklen kan hælpe med at udforske dens potentiale. Bliv medlem i dag og bliv en del af et <nuxt-link to="#">
-              netværk
-            </nuxt-link> med mange entusiaster. Få adgang til <nuxt-link to="#">
-              vores værksted
-            </nuxt-link>, lån cykler fra <nuxt-link to="#">
-              cykelbiblioteket
-            </nuxt-link>, deltag til <nuxt-link to="#">
+            Innovativ <nuxt-link to="#">
+              cykelforening</nuxt-link> hvor alle med interesse i cyklen kan hælpe med at udforske dens potentiale. Bliv en del af et <nuxt-link to="#">
+               stort netværk</nuxt-link>, og få adgang til <nuxt-link to="#">
+              vores værksted</nuxt-link>, lån cykler fra <nuxt-link to="#">
+              cykelbiblioteket</nuxt-link>, deltag til <nuxt-link to="#">
               events
             </nuxt-link> og hjælp os med et af vores mange <nuxt-link to="#">
-              andre projekter
-            </nuxt-link>.
+              andre projekter</nuxt-link>.
           </p>
           <nuxt-link
             to="/about"
