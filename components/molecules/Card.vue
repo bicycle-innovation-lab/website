@@ -10,20 +10,13 @@
       <p class="card__text">
         {{ description }}
       </p>
-      <!-- <link-item :to="`/${link}`" class="card__link">
-        Læs mere
-      </link-item> -->
     </article>
   </nuxt-link>
 </template>
 
 <script>
-import LinkItem from '../atoms/LinkItem'
-
 export default {
   name: 'Card',
-
-  components: { LinkItem },
 
   props: {
     img: {
