@@ -12,26 +12,18 @@
   grid-column: 2 / -2;
 }
 
-.footer h2 {
-  margin: 2rem 0 1rem 0;
-  @include fluid-type(20rem, 64rem, .9rem, 1rem);
-}
-
 .footer {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing);
+  gap: calc(var(--spacing) * 3);
+  justify-content: space-between;
 
-  margin-top: 2rem;
-
-  >div {
-    flex: 1 1 auto;
-  }
+  margin-top: 6rem;
 
   &__header {
+    flex: 1 0 100%;
     white-space: nowrap;
     text-decoration: none;
-
 
     h1 {
       @include fluid-type(20rem, 64rem, 1rem, 1.3rem);
@@ -45,30 +37,61 @@
     }
   }
 
-  &__navigation {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing);
+  &__membership {
+    flex: 1 0 auto;
+    margin-bottom: 2rem;
+    div {
+      max-width: 250px;
+    }
 
-    > * {
-      flex: 1 0 auto;
+    @include media("<=1200px") {
+      flex: 1 0 100%
     }
   }
 
-  &__membership {
-    flex: 1 0 calc(300px - var(--spacing));
+  &__projects,
+  &__contact,
+  &__forening {
+    flex: 0 0 auto;
 
     h2 {
-      @include fluid-type(20rem, 64rem, 1rem, 1.2rem);
+      margin-bottom: 2em;
+      margin-top: 0;
+      color: var(--text-color);
+      font-family: "Brown-Regular";
+      text-transform: uppercase;
+      font-size: 1.1rem;
+    }
+
+    li {
+  
+      a,
+      a:link {
+        color: var(--text-color);
+        text-decoration-color: inherit;
+        text-decoration-thickness: 1;
+    
+        &:visited {
+          color: var(--text-color);
+          text-decoration-color: var(--text-color);
+        }
+    
+        &:hover {
+  
+  
+          @media (prefers-color-scheme: dark) {
+            color: var(--primary-color);
+            text-decoration-color: inherit;
+          }
+        }
+      }
     }
   }
 
   &__copyright {
-    color: var(--gray);
+    color: var(--gray-400);
     flex: 1 0 100%;
     text-align: center;
     margin-bottom: 1.5rem;
   }
-
-
 }
