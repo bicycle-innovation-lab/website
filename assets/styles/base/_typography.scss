@@ -81,7 +81,7 @@ p, li {
   &.lead {
     @include fluid-type(20rem, 64rem, 1.2rem, 1.5rem);
     line-height: 1.2em;
-    margin-bottom: 0;
+    margin-bottom: 2em;
   }
 
   font-weight: 200;
