@@ -36,8 +36,18 @@
   --black: hsl(0, 0%, 14%);
   // --white: hsl(0, 0%, 100%);
   --white: hsl(38.2, 44%, 95.1%);
-  --gray: hsl(120, 1%, 68%);
 
+  --gray: hsl(120, 1%, 68%);
+  --gray-100: hsl(120, 1%, 98%);
+  --gray-200: hsl(120, 1%, 88%);
+  --gray-300: hsl(120, 1%, 78%);
+  --gray-400: hsl(120, 1%, 68%);
+  --gray-500: hsl(120, 1%, 58%);
+  --gray-600: hsl(120, 1%, 48%);
+  --gray-700: hsl(120, 1%, 38%);
+  --gray-800: hsl(120, 1%, 28%);
+  --gray-900: hsl(120, 1%, 18%);
+  
   --primary-color: var(--red-color);
   --primary-color-900: var(--red-color-900);
   --bg-color: var(--white);
@@ -52,7 +62,8 @@
   --box-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   
   // Font
-  --font-family: 'Boing', sans-serif;
+  // ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  --font-family: 'Brown-Regular', sans-serif;
 
   // Misc
   --border-radius: 0.8rem;
