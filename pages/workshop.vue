@@ -23,7 +23,7 @@
       <figure class="full-bleed grid">
         <nuxt-image :placeholder="true" class="small-bleed grid" src="/images/pages/workshop/workshop-Omnium.jpg" />
         <figcaption class="right align-end text-small">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque ea eaque, esse ratione consectetur qui aliquid animi id omnis repellat minus provident necessitatibus atque obcaecati molestias molestiae beatae! Sit.
+          Et af vores medlemmer i gang med at bygge sin nye Omnium Cargo. Stel og dele har han købt gennem Bicycle Innovation Lab og bruger vores specialværktøj samt vejledning fra de andre medlemmer.
         </figcaption>
       </figure>
       <p>Hvis du er cykelmekaniker og gerne vil stå for en workshop eller assistere i vores værksted, har du mulighed for at blive medlem i Bicycle Innovation Lab som frivillig. Læs mere her.</p>
