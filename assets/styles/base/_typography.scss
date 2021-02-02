@@ -1,16 +1,15 @@
 @font-face {
-  font-family: 'Boing-Bold';
-  font-weight: bold;
-  src: url('/fonts/boing/boing_bold.woff2') format("woff2"), 
-  url('/fonts/boing/boing_bold.woff') format("woff");
-  font-display: swap;
+  font-family: 'Brown-Bold';
+  font-weight: 700;
+  src: url('/fonts/brown/lineto-brown-pro-bold.woff') format("woff");
+  font-display: auto;
 }
 
 @font-face {
   font-family: 'Boing-Semibold';
   font-style: normal;
-  font-weight: 200;
-  font-display: swap;
+  font-weight: 400;
+  font-display: auto;
   src: url('/fonts/Boing_SemiboldWEB.eot');
   src: url('/fonts/Boing_SemiboldWEB.eot?#iefix') format('embedded-opentype'), 
   url('/fonts/Boing_SemiboldWEB.woff2') format('woff2'), 
@@ -22,7 +21,7 @@
   font-family: 'Brown-Regular';
   font-style: normal;
   font-weight: 200;
-  font-display: swap;
+  font-display: auto;
   src: url('/fonts/brown/regular/lineto-brown-pro-regular.eot');
   src: url('/fonts/brown/regular/lineto-brown-pro-regular.eot?#iefix') format('embedded-opentype'), 
   url('/fonts/brown/regular/lineto-brown-pro-regular.woff') format('woff'), 
@@ -49,7 +48,7 @@ body {
 
 // fonts
 h1, h2, h3, h4, p, li{
-  font-family: 'Boing-Bold', sans-serif;
+  font-family: 'Boing-Semibold', Helvetica, Arial, sans-serif;
   color: var(--text-color);
 }
 
@@ -74,7 +73,7 @@ h3 {
 }
 
 p, li {
-  font-family: 'Brown-Regular';
+  font-family: 'Brown-Regular', Helvetica, Arial, sans-serif;
   @include fluid-type(20rem, 64rem, .9rem, 1.2rem);
   line-height: 1.5em;
   margin-bottom: .8em;
@@ -116,7 +115,7 @@ p, li {
 
 figcaption,
 .small-text {
-  font-family: 'Brown-Regular';
+  font-family: 'Brown-Regular' , Helvetica, Arial, sans-serif;
   @include fluid-type(20rem, 64rem, .8rem, .9rem);
   line-height: 1.3;
 }
@@ -125,19 +124,19 @@ figcaption {
   color: rgba(0,0,0,.55);
 
   @media (prefers-color-scheme: dark) {
-    color: var(--gray)
+    color: var(--gray-400)
   }
 }
 
 a {
   color: inherit;
-  transition: color .12s;
+  // transition: color .12s;
   text-decoration-thickness: .130em;
   text-underline-offset: .130em;
   text-decoration-color: var(--primary-color);
 
   &:visited {
-    color: var(--gray)
+    color: var(--gray-400)
   }
 
   &:hover {
