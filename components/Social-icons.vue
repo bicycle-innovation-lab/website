@@ -1,11 +1,9 @@
 <template>
-  <div>
+  <div class="social-icons">
     <a
       href="#"
     ><svg
       xmlns="http://www.w3.org/2000/svg"
-      width="22.93"
-      height="22.793"
       viewBox="0 0 22.93 22.793"
       fill="currentColor"
     >
@@ -21,8 +19,6 @@
       href="#"
     ><svg
       xmlns="http://www.w3.org/2000/svg"
-      width="23.042"
-      height="23.042"
       viewBox="0 0 23.042 23.042"
       fill="currentColor"
     >
@@ -57,16 +53,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a {
-  margin-right: .8rem;
+@import '../assets/styles/abstracts/include-media';
 
-  &:last-child {
-    margin-right: 0;
-  }
+.social-icons {
+  display: inline-flex;
 
-  svg {
-    width: 1.8rem;
-    height: 1.8rem;
+  > a {
+    border-radius: 50%;
+    padding: .5em;
+    width: clamp(1.2rem, 0.8636363636rem + 0.6818181818vw, 1.6rem );
+
+    transition: all .1s ease-out;
+
+    color: var(--gray-900);
+
+    @media (prefers-color-scheme: dark) {
+        color: var(--gray-300);
+    }
+
+    &:hover {
+      color: var(--red-color);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: var(--black);
+    }
   }
 }
 
