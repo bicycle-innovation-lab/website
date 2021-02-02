@@ -13,6 +13,7 @@
           <p class="lead">
             Bliv medlem, støt et godt formål og hjælp med at præge cykelkulturen allerede i dag.
           </p>
+          <Btn text="Tilmeld mig" link="about" />
         </div>
       </article>
 
@@ -62,10 +63,11 @@
 <script>
 import FooterLinks from './molecules/Footer-links.vue'
 import SocialIcons from './Social-icons.vue'
+import Btn from './atoms/Btn.vue'
 
 export default {
   name: 'Footer',
 
-  components: { SocialIcons, FooterLinks }
+  components: { SocialIcons, FooterLinks, Btn }
 }
 </script>

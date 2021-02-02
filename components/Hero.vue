@@ -10247,29 +10247,14 @@
         <div>
           <p>
             Innovativ <nuxt-link to="#">
-              cykelforening
-            </nuxt-link> hvor alle med interesse i cyklen kan hælpe med at udforske dens potentiale. Bliv en del af et <nuxt-link to="#">
-              stort netværk
-            </nuxt-link>, og få adgang til <nuxt-link to="#">
-              vores værksted
-            </nuxt-link>, lån cykler fra <nuxt-link to="#">
-              cykelbiblioteket
-            </nuxt-link>, deltag til <nuxt-link to="#">
-              events
-            </nuxt-link> og hjælp os med et af vores mange <nuxt-link to="#">
-              andre projekter
-            </nuxt-link>.
+              cykelforening</nuxt-link> hvor alle med interesse i cyklen kan hælpe med at udforske dens potentiale. Bliv en del af et <nuxt-link to="#">
+              stort netværk</nuxt-link>, og få adgang til <nuxt-link to="#">
+              vores værksted</nuxt-link>, lån cykler fra <nuxt-link to="#">
+              cykelbiblioteket</nuxt-link>, deltag til <nuxt-link to="#">
+              events</nuxt-link> og hjælp os med et af vores mange <nuxt-link to="#">
+              andre projekter</nuxt-link>.
           </p>
-          <nuxt-link
-            to="/about"
-            class="button button--primary"
-          >
-            Tilmeld mig
-            <svg width="13px" height="10px" viewBox="0 0 13 10">
-              <path d="M1,5 L11,5" />
-              <polyline points="8 1 12 5 8 9" />
-            </svg>
-          </nuxt-link>
+          <Btn text="Tilmeld mig" link="about" />
         </div>
       </div>
     </div>
@@ -10277,7 +10262,10 @@
 </template>
 
 <script>
-export default {}
+import Btn from './atoms/Btn.vue'
+export default {
+  components: { Btn }
+}
 </script>
 
 <style lang="scss" scoped>
